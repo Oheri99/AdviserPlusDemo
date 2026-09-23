@@ -2,7 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": ["node"],
     "allowJs": true,
@@ -12,7 +12,6 @@
     "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
-    "baseUrl": ".",
     "ignoreDeprecations": "6.0"
   },
   "include": ["playwright.config.ts", "tests/**/*.ts"]

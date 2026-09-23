@@ -10,10 +10,10 @@ export class TodoPage {
 
   constructor(page: Page) {
     this.page = page;
-    this.todoLink = page.locator('#todo-link');
-    this.todoTypeSelect = page.locator('#todo-type-select');
-    this.newTodoInput = page.locator('#new-todo-input');
-    this.addTodoButton = page.locator('#add-todo-button');
+    this.todoLink = page.getByRole('link', { name: /go to todo list/i });
+    this.todoTypeSelect = page.getByRole('combobox');
+    this.newTodoInput = page.getByPlaceholder('Enter a new todo');
+    this.addTodoButton = page.getByRole('button', { name: /add todo/i });
     this.todoList = page.locator('#todo-list');
   }
 
