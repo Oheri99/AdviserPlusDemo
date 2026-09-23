@@ -1,4 +1,5 @@
-import React, { createContext, useState } from "react";
+import PropTypes from 'prop-types';
+import { createContext, useState } from "react";
 
 export const TodoContext = createContext();
 
@@ -29,4 +30,8 @@ export const TodoProvider = ({ children }) => {
       {children}
     </TodoContext.Provider>
   );
+};
+
+TodoProvider.propTypes = {
+  children: PropTypes.node.isRequired,
 };
