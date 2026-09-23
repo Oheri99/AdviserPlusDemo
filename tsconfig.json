@@ -2,11 +2,7 @@
   "compilerOptions": {
     "target": "ES2022",
     "module": "ESNext",
-<<<<<<< HEAD
     "moduleResolution": "Bundler",
-=======
-    "moduleResolution": "bundler",
->>>>>>> e3c44d9 (updated)
     "lib": ["DOM", "DOM.Iterable", "ES2022"],
     "types": ["node"],
     "allowJs": true,
